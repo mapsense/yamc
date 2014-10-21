@@ -9,9 +9,7 @@ end
 
 include_recipe 'apt'
 
-node['mongodb']['packages'].map do |name|
-  package name do
-    version node['mongodb']['version']
-  end
+package 'mongodb-org' do
+  version node['mongodb']['version']
 end
 
