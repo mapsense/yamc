@@ -8,8 +8,8 @@ default['mongodb']['distribution'] = {
   'uri'        => 'http://downloads-distro.mongodb.org/repo/ubuntu-upstart'
 }
 
-# Where MongoDB should keep its log file.
-default['mongodb']['log'] = '/var/log/mongodb/mongodb.log'
+# Where MongoDB should keep its log files.
+default['mongodb']['log'] = '/var/log/mongodb'
 
 # Where MongoDB should keep its database files.
 default['mongodb']['data'] = '/data/db'

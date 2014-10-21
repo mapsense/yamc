@@ -1,9 +1,9 @@
 systemLog:
   destination: file
-  path: <%= node['mongodb']['log'] %>
+  path: <%= node['mongodb']['log'] + "/mongodb.log" %>
   logAppend: true
 storage:
-  dbpath: <%= node['mongodb']['data'] %>
+  dbPath: <%= node['mongodb']['data'] %>
   journal:
     enabled: true
 processManagement:
@@ -11,4 +11,3 @@ processManagement:
 net:
   port: <%= node['mongodb']['port'] %>
   bindIp: <%= node['mongodb']['bindIp'] %>
-
