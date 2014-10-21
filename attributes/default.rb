@@ -9,10 +9,10 @@ default['mongodb']['distribution'] = {
 }
 
 # Where MongoDB should keep its log files.
-default['mongodb']['log'] = '/var/log/mongodb'
+default['mongodb']['logPath'] = '/var/log/mongodb'
 
 # Where MongoDB should keep its database files.
-default['mongodb']['data'] = '/data/db'
+default['mongodb']['dbPath'] = '/data/db'
 
 # What port MongoDB should listen on.
 default['mongodb']['port'] = 27017
