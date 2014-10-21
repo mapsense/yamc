@@ -1,0 +1,10 @@
+DEPENDENCIES
+  apt
+  mongodb
+    path: .
+    metadata: true
+
+GRAPH
+  apt (2.6.0)
+  mongodb (0.0.0)
+    apt (>= 0.0.0)
