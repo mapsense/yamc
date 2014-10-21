@@ -7,10 +7,9 @@ provisioner:
 
 platforms:
   - name: ubuntu-12.04
-  - name: centos-6.4
 
 suites:
   - name: default
     run_list:
-      - recipe[mongodb_soup::default]
+      - mongodb::install_ubuntu
     attributes:
