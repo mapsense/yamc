@@ -8,25 +8,15 @@ default['mongodb']['distribution'] = {
   'uri'        => 'http://downloads-distro.mongodb.org/repo/ubuntu-upstart'
 }
 
-# The MongoDB configuration to render. (Directly transferred to a YML file.)
-default['mongodb']['configuration'] = {
-  systemLog: {
-    destination: 'file',
-    path: '/var/log/mongodb/mongodb.log',
-    logAppend: true
-  },
-  storage: {
-    dbpath: '/data/db',
-    journal: {
-      enabled: true
-    }
-  },
-  processManagement: {
-    fork: true
-  },
-  net: {
-    bindIp: '127.0.0.1',
-    port: 27017
-  }
-}
+# Where MongoDB should keep its log file.
+default['mongodb']['log'] = '/var/log/mongodb/mongodb.log'
+
+# Where MongoDB should keep its database files.
+default['mongodb']['data'] = '/data/db'
+
+# What port MongoDB should listen on.
+default['mongodb']['port'] = 27017
+
+# The IP address MongoDB should bind to.
+default['mongodb']['bindIp'] = '127.0.0.1'
 

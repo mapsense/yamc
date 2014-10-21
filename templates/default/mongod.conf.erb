@@ -1,0 +1,14 @@
+systemLog:
+  destination: file
+  path: <%= node['mongodb']['log'] %>
+  logAppend: true
+storage:
+  dbpath: <%= node['mongodb']['data'] %>
+  journal:
+    enabled: true
+processManagement:
+  fork: true
+net:
+  port: <%= node['mongodb']['port'] %>
+  bindIp: <%= node['mongodb']['bindIp'] %>
+
