@@ -11,6 +11,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - mongodb::install
-      - mongodb::configure
+      - mongodb::default
     attributes:
