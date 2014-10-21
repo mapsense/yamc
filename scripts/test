@@ -1,0 +1,6 @@
+HERE=`pwd`
+
+for test in utest itest; do
+  echo Running $test script.
+  cd $HERE && ./$test
+done
