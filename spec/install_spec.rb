@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'mongodb::install_ubuntu' do 
+describe 'mongodb::install' do 
   package = 'mongodb-org'
 
   let (:chef_run) {

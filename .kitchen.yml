@@ -11,5 +11,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - mongodb::install_ubuntu
+      - mongodb::install
     attributes:
