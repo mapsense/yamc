@@ -25,7 +25,7 @@ There are also a few scripts in `scripts` if you're interested in contributing:
 | ------ | ----------- |
 | `bootstrap` | Bootstraps the environment for YAMC development. |
 | `test` | Runs `utest` then `itest`, sequentially. |
-| `utest` | Runs unit test on YAMC using `chefspec`. |
+| `utest` | Runs unit tests on YAMC using `chefspec`. |
 | `itest` | Runs integration (smoke) tests on YAMC using `test-kitchen`. |
 
 [template]: https://github.com/msoliter/yamc/blob/master/templates/default/mongod.conf.erb
