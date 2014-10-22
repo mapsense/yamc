@@ -28,3 +28,5 @@ There are also a few scripts in `scripts` if you're interested in contributing:
 | `utest` | Runs unit test on YAMC using `chefspec`. |
 | `itest` | Runs integration (smoke) tests on YAMC using `test-kitchen`. |
 
+[template]: https://github.com/msoliter/yamc/blob/master/templates/default/mongod.conf.erb
+[attributes]: https://github.com/msoliter/yamc/blob/master/attributes/default.rb
